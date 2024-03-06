@@ -77,8 +77,13 @@ WSGI_APPLICATION = "milo_fxc.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "mssql",
+        "NAME":"User_client",
+        "USER": "Data_milo",
+        "password": "admin123456",
+        "host": "Localhost",
+        "port": '',
+        "OPTIONS": {"driver": "ODBC Driver 18 for SQL Server",}
     }
 }
 
