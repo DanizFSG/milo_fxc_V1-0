@@ -39,12 +39,21 @@
                             <span class="text nav-text">Inicio</span>
                         </a>
                     </li>
+                    {% if user.is_authenticated %}
                     <li class="nav-links">
                         <a href="{% url 'Milo_cotiza' %}">
                             <i class='bx bxs-hard-hat  icon'></i>
                             <span class="text nav-text">Cotizaciones</span>
                         </a>
                     </li>
+                    <li class="nav-links">
+                        <a href="{% url 'Tikets' %}">
+                            <i class='bx bxs-add-to-queue icon' ></i>
+                            <span class="text nav-text">Tikets</span>
+                        </a>
+                    </li>
+                    {% endif %}
+
                     <li class="nav-links">
                         <a href="#">
                             <i class='bx bxs-info-circle  icon' ></i>

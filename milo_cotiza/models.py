@@ -9,6 +9,6 @@ class user_data(models.Model):
     nit = models.CharField(max_length=100)
     password = models.CharField(max_length=100)
     
-class Unit(models.Model):
-    name = models.CharField(max_length=100)
-    quantity = models.IntegerField()
+class Ingreso_equipos(models.Model):
+    Cliente = models.CharField(max_length=100)
+    

@@ -34,12 +34,7 @@ body{
     height: 100vh;
     background: var(--body-color);
 }
-
-
-
-
 /*    sidebar    */
-
 .sidebar{
     position: fixed;
     top: 0;
@@ -51,11 +46,9 @@ body{
     transition: var(--tran-05);
     z-index: 100;
 }
-
 .sidebar.close{
     width: 88px;
 }
-
 /*    resuabe css    */
 .sidebar .text{
     font-size: 16px;
@@ -72,7 +65,6 @@ body{
     min-width: 60px;
     display: flex;
     align-items: center;
-
 }
 .sidebar li{
     height: 50px;

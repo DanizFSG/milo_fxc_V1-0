@@ -4,7 +4,6 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.models import User
-
 from .forms import Register_user
 
 
@@ -12,8 +11,6 @@ from .forms import Register_user
 
 
 # Create your views here.
-
-
 def Inicio(request):
     return render(request, ('Inicio.html'))
 def Milo_cotiza(request):
@@ -61,4 +58,7 @@ def user_logout(request):
     logout(request)
     return redirect('Inicio')
 
-
+def calculador_cantidad(self):
+    self.cantidad_total = self.componente1.cantidad + self.componente2.cantidad
+    self.save()
+    
